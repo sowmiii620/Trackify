@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackify</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Trackify</h1>
+    </div>
+    <div class="container">
+        <div class="box-container">
+           <h1>Yuvan</h1>
+           <h2>song name</h2>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, eum quidem repellat suscipit fuga aliquam ipsa alias maiores consectetur sed dolore reiciendis nesciunt iure harum libero, beatae nobis veniam! Cupiditate.</p>
+           <button onclick="deletesong(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Song</h2>
+        <form>
+            <input type="text" placeholder="Composer Name" id="composer-name-input">
+            <input type="text" placeholder="Song Name" id="song-name-input">
+            <textarea placeholder="Short discription about the song" id="text-area-input"></textarea>
+            <button id="add-song">ADD</button>
+            <button id="cancel-song">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-btn">+</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
