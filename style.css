@@ -118,3 +118,29 @@ body{
 .popup-box textarea:focus{
     outline: none;
 }
+
+@media(max-width:1200px){
+.box-container{
+    width: 40%;
+}
+.popup-box{
+    width: 70%;
+    left: 15%;
+    top: 30%;
+}
+}
+
+@media(max-width:600px){
+    .box-container{
+        width: 80%;
+    }
+    .container{
+        padding-left: 65px;
+        gap: 50px;
+    }
+    .popup-box{
+        width: 80%;
+        left: 10%;
+    }
+    
+}
