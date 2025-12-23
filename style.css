@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   background-color: rgb(1, 1, 1);
+}
+
+.navbar{
+    color: rgb(0, 0, 0);
+    background-color: rgb(224, 224, 67);
+    padding: 10px;
+    font-size: 20px;
+}
+.container{
+    padding-top: 40px;
+    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.box-container{
+    padding: 15px;
+    width: 25%;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    border-radius: 30px;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+.box-container h1{
+    color: rgb(224, 224, 67);
+}
+.box-container p{
+    padding-bottom: 10px;
+}
+.box-container button{
+    background-color: rgb(224, 224, 67);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+}
+.add-btn{
+    background-color: rgb(224, 224, 67);
+    color: black;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+.popup-overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup-box{
+    background-color: rgb(224, 224, 67);
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+}
+.popup-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+.popup-box textarea{
+    background: transparent;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 2px;
+}
+.popup-box input::placeholder{
+    color: black;
+}
+.popup-box textarea::placeholder{
+    color: black;
+}
+.popup-box button{
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+.popup-box input:focus{
+    outline: none;
+}
+.popup-box textarea:focus{
+    outline: none;
+}
